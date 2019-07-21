@@ -20,9 +20,12 @@ public class CategoryContent implements Parcelable {
     private String mAnswerB;
     private String mAnswerC;
     private String mIsCorrect;
+    private String mTitle;
+    private String mPhoto;
 
     public CategoryContent(String category, String id, String question, String answerA,
-                           String answerB, String answerC, String isCorrect) {
+                           String answerB, String answerC, String isCorrect,
+                           String title, String photo) {
         this.mCategory = category;
         this.mId = id;
         this.mQuestion = question;
@@ -30,6 +33,8 @@ public class CategoryContent implements Parcelable {
         this.mAnswerB = answerB;
         this.mAnswerC = answerC;
         this.mIsCorrect = isCorrect;
+        this.mTitle = title;
+        this.mPhoto = photo;
     }
 
     protected CategoryContent(Parcel in) {
@@ -40,6 +45,8 @@ public class CategoryContent implements Parcelable {
         mAnswerB = in.readString();
         mAnswerC = in.readString();
         mIsCorrect = in.readString();
+        mTitle = in.readString();
+        mPhoto = in.readString();
     }
 
     public static final Creator<CategoryContent> CREATOR = new Creator<CategoryContent>() {
@@ -68,6 +75,8 @@ public class CategoryContent implements Parcelable {
         dest.writeString(mAnswerB);
         dest.writeString(mAnswerC);
         dest.writeString(mIsCorrect);
+        dest.writeString(mTitle);
+        dest.writeString(mPhoto);
     }
 
     public String getCategory() {
@@ -124,5 +133,21 @@ public class CategoryContent implements Parcelable {
 
     public void setIsCorrect(String isCorrect) {
         this.mIsCorrect = isCorrect;
+    }
+
+    public String getTitle() {
+        return mTitle;
+    }
+
+    public void setTitle(String title) {
+        this.mTitle = title;
+    }
+
+    public String getPhoto() {
+        return mPhoto;
+    }
+
+    public void setPhoto(String photo) {
+        this.mPhoto = photo;
     }
 }
