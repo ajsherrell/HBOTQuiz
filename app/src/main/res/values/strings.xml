@@ -1,14 +1,12 @@
 <resources>
     <string name="app_name">HBOT Quiz</string>
-    <string name="title_item_detail">Item Detail</string>
+    <string name="title">Item Detail</string>
 
     <!-- dummy questions -->
-    <string name="dummy_question1">This is question one?</string>
-    <string name="dummy_question2">This is question two?</string>
-    <string name="dummy_question3">This is question three?</string>
+    <string name="question">This is question one?</string>
 
     <!-- dummy answers -->
-    <string name="dummy_answer1">Answer one.</string>
-    <string name="dummy_answer2">Answer two.</string>
-    <string name="dummy_answer3">Answer three.</string>
+    <string name="answerA">Answer one.</string>
+    <string name="answerB">Answer two.</string>
+    <string name="answerC">Answer three.</string>
 </resources>

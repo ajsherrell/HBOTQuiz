@@ -1,0 +1,14 @@
+{
+    "Category":{
+      "Physics":[{
+        "id": 1,
+        "question": "This is question one?",
+        [{
+          "answerA": "Answer A",
+          "answerB": "Answer B",
+          "answerC": "Answer C"
+        }]
+      ]
+    }
+  }
+}
